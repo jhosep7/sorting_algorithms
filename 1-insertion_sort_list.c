@@ -19,14 +19,14 @@ void insertion_sort_list(listint_t **list)
 		{
 			Temp->prev->next = Temp->next;
 			if (Temp->next)
-			{Temp->next->prev = Temp->prev;}
+			{Temp->next->prev = Temp->prev; }
 			Temp->next = Temp->prev;
 			Temp->prev = Temp->prev->prev;
 			Temp->next->prev = Temp;
 			if (!(Temp->prev))
-			{*list = Temp;}
+			{*list = Temp; }
 			else
-			{Temp->prev->next = Temp;}
+			{Temp->prev->next = Temp; }
 			print_list(*list);
 		}
 		Temp = Temp->next;

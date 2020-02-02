@@ -8,11 +8,11 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t Temp, i = 0, j, Min_Idx;
+	unsigned int Temp, i, j, Min_Idx;
 
 	if (!array || size <= 1)
 	{return; }
-
+	i = 0;
 	while (i < (size - 1))
 	{
 		Min_Idx = i;
