@@ -10,6 +10,8 @@ void selection_sort(int *array, size_t size)
 {
 	size_t Aux, i = 0, j, Lowest_Idx;
 
+	if (!array)
+	{return; }
 	for (i = 0; i < size - 1; i++)
 	{
 		Lowest_Idx = i;
