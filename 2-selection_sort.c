@@ -8,25 +8,23 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t Temp, i, j, Min_Idx;
+	size_t Aux, i = 0, j, Lowest_Idx;
 
-	if (!array || size <= 1)
-	{return; }
-	i = 0;
-	while (i < (size - 1))
+	for (i = 0; i < size - 1; i++)
 	{
-		Min_Idx = i;
-		j = (i + 1);
+		Lowest_Idx = i;
+		j = i + 1;
 		while (j < size)
 		{
-			if (array[j] < array[Min_Idx])
-			{Min_Idx = j; }
+			if (array[j] < array[Lowest_Idx])
+			{Lowest_Idx = j; }
 			j++;
 		}
-		Temp = array[Min_Idx];
-		array[Min_Idx] = array[i];
-		array[i] = Temp;
+		if (Lowest_Idx == i)
+		{continue; }
+		Aux = array[Lowest_Idx];
+		array[Lowest_Idx] = array[i];
+		array[i] = Aux;
 		print_array(array, size);
-		i++;
 	}
 }
