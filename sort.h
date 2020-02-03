@@ -26,6 +26,11 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+<<<<<<< HEAD
+=======
+void quick_sort(int *array, size_t size);
+
+>>>>>>> a2f4c229b16e1100b02a084bccf894da063c1930
 
 void quick_sort(int *array, size_t size);
 void Sort(int *array, int Init, int Final, size_t size);
