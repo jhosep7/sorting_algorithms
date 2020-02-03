@@ -47,7 +47,7 @@ int Partition(int *array, int Init, int Final, size_t size)
 {
 	int Pivot = array[Final], i = Init - 1, j, Temp;
 
-	for(j = Init; j <= Final; j++)
+	for (j = Init; j <= Final; j++)
 	{
 		if (array[j] <= Pivot)
 		{
