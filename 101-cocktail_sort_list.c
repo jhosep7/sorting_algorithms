@@ -7,7 +7,7 @@
  */
 void cocktail_sort_list(listint_t **list)
 {
-	listint_t *H = *list, *Temp;
+	listint_t *H = *list, *Temp = NULL;
 	bool k = true;
 
 	if (!list)
@@ -32,7 +32,10 @@ void cocktail_sort_list(listint_t **list)
 			while (H->prev)
 			{
 				if ((H->prev->n) > (H->n))
-				{SwapRL(list, H, Temp), print_list(*list), k = true; }
+				{
+					SwapRL(list, H, Temp);
+					print_list(*list), k = true;
+				}
 				else
 				{H = H->prev; }
 			}
