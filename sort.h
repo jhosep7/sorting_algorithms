@@ -32,6 +32,9 @@ void Sort(int *array, int Init, int Final, size_t size);
 int Partition(int *array, int Init, int Final, size_t size);
 
 void shell_sort(int *array, size_t size);
+
 void cocktail_sort_list(listint_t **list);
+void SwapLR(listint_t **list, listint_t *H, listint_t *Temp);
+void SwapRL(listint_t **list, listint_t *H, listint_t *Temp);
 
 #endif
