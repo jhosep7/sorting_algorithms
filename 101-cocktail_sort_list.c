@@ -12,29 +12,30 @@ void cocktail_sort_list(listint_t **list)
 
 	if (!list)
 	{return; }
-
-	while (k)
+	else
 	{
-		k = false;
-		while (H->next)
+		while (k)
 		{
-			if ((H->n) > (H->next->n))
+			k = false;
+			while (H->next)
 			{
-				Temp = H->next, SwapLR(list, H, Temp);
-				print_list(*list), k = true;
+				if ((H->n) > (H->next->n))
+				{
+					Temp = H->next, SwapLR(list, H, Temp);
+					print_list(*list), k = true;
+				}
+				else
+				{H = H->next; }
 			}
-			else
-			{H = H->next; }
-		}
-		if (k == false)
-		{break; }
-		k = false;
-		while (H->prev)
-		{
-			if ((H->prev->n) > (H->n))
-			{SwapRL(list, H, Temp), print_list(*list), k = true; }
-			else
-			{H = H->prev; }
+
+			k = false;
+			while (H->prev)
+			{
+				if ((H->prev->n) > (H->n))
+				{SwapRL(list, H, Temp), print_list(*list), k = true; }
+				else
+				{H = H->prev; }
+			}
 		}
 	}
 }
