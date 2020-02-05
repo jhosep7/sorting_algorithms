@@ -39,4 +39,8 @@ void SwapRL(listint_t **list, listint_t *H, listint_t *Temp);
 
 void counting_sort(int *array, size_t size);
 
+int Maximo(int arr[], int n) ;
+void radix_sort(int *array, size_t size);
+void conteo(int arr[], int n, int exp);
+
 #endif
