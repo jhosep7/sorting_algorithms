@@ -37,4 +37,6 @@ void cocktail_sort_list(listint_t **list);
 void SwapLR(listint_t **list, listint_t *H, listint_t *Temp);
 void SwapRL(listint_t **list, listint_t *H, listint_t *Temp);
 
+void counting_sort(int *array, size_t size);
+
 #endif
