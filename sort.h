@@ -39,8 +39,11 @@ void SwapRL(listint_t **list, listint_t *H, listint_t *Temp);
 
 void counting_sort(int *array, size_t size);
 
+int Maximo(int arr[], int n) ;
+void radix_sort(int *array, size_t size);
+void conteo(int arr[], int n, int exp);
+
 void quick_sort_hoare(int *array, size_t size);
 void Sort(int *array, int Init, int Final, size_t size);
 int Partition(int *array, int Init, int Final, size_t size);
-
 #endif
