@@ -49,15 +49,13 @@ int Partition(int *array, int Init, int Final, size_t size)
 
 	while (true)
 	{
-		do
-		{
+		do {
 			i++;
-		}while (array[i] < Pivot);
+		} while (array[i] < Pivot);
 
-		do
-		{
+		do {
 			j--;
-		}while (array[j] > Pivot);
+		} while (array[j] > Pivot);
 
 		if (i > j)
 		{return (j); }
